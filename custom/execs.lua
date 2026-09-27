@@ -44,7 +44,10 @@ local function apply_resizer_rules(win)
 
     -- Picture in picture
     fn.resizer(win, "Picture[- ]in[- ][Pp]icture", 0, 0, pip_actions, false)
+
+    -- Solanum
+    fn.resizer(win, "org.gnome.Solanum", 14, 24, pip_actions, true, "class")
 end
 
--- hl.on("window.title", apply_resizer_rules)
--- hl.on("window.open", apply_resizer_rules)
+hl.on("window.title", apply_resizer_rules)
+hl.on("window.open", apply_resizer_rules)

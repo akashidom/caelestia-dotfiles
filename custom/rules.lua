@@ -54,6 +54,15 @@ local todo_app_tag = "todo_app"
 --     keep_aspect_ratio = true,
 -- })
 
+-- Solanum
+hl.window_rule({
+    match             = { class = "org.gnome.Solanum" },
+    move              = "(monitor_w*0.98-window_w) (monitor_h*0.97-window_h)", -- Initial move so window doesn't jump so much
+    pin               = true,
+    float             = true,
+    keep_aspect_ratio = true,
+})
+
 
 ----------------------
 ---- Tagged rules ----
