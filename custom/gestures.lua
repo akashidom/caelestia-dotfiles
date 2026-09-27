@@ -25,4 +25,4 @@ hl.config({
 --     action    = function()
 --         hl.exec_cmd(vars.sleepGestureCmd)
 --     end,
--- })
+} )
