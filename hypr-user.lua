@@ -1,13 +1,5 @@
 local vars = require("variables")
 
-hl.config({
-    input = {
-        touchpad = {
-            natural_scroll = vars.naturalScroll,
-        }
-    }
-})
-
 if hl.plugin.hyprglass then
     local hg = hl.plugin.hyprglass
 
