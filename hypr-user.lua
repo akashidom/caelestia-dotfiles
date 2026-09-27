@@ -8,25 +8,6 @@ hl.config({
     }
 })
 
--- Tags an array of window matches. If `field` is given, matches should be an
--- array of strings. Otherwise, it should be an array of tables.
-local function tagged_rule(tag, matches, field)
-    for _, match in ipairs(matches) do
-        if field then
-            local table = {}
-            table[field] = match
-            match = table
-        end
-        hl.window_rule({ match = match, tag = "+" .. tag })
-    end
-end
-
--- Add karere and ayugram-desktop to communication apps
-tagged_rule("communication_app", {
-    "io.github.tobagin.karere",
-    "com.ayugram.desktop",
-}, "class")
-
 if hl.plugin.hyprglass then
     local hg = hl.plugin.hyprglass
 
@@ -56,7 +37,7 @@ if hl.plugin.hyprglass then
         edge_thinkness = 0.4,
         dark = { brightness = 0.7 },
         light = { brightness = 1.2 },
-        
+
     })
 
     hg.preset("contrasted", {

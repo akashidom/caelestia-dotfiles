@@ -142,10 +142,11 @@ local todo_app_tag = "todo_app"
 -- tagged_rule(music_player_tag, {
 --     "Spotify|Spotify Free" -- Spotify wayland, it has no class for some reason
 -- }, "initial_title")
--- tagged_rule(communication_app_tag, {
---     "discord|equibop|vesktop", -- Discord clients
---     "whatsapp"                 -- Whatsapp
--- }, "class")
+tagged_rule(communication_app_tag, {
+    "vesktop", -- Discord
+    "io.github.tobagin.karere", -- Whatsapp
+    "com.ayugram.desktop", -- Telegram
+}, "class")
 -- tagged_rule(todo_app_tag, {
 --     "todoist" -- Todoist
 -- }, "class")
