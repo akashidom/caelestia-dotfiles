@@ -71,8 +71,8 @@ local todo_app_tag = "todo_app"
 -- }, "class")
 --
 --
--- Floating apps
-tagged_rule(float_tag, {
+-- -- Floating apps
+-- tagged_rule(float_tag, {
 --     "guifetch",                           -- System info
 --     "yad|zenity",                         -- Dialogs
 --     "wev",                                -- Input detector
@@ -81,8 +81,7 @@ tagged_rule(float_tag, {
 --     "com.github.GradienceTeam.Gradience", -- GTK themer (deprecated)
 --     "feh|imv|swappy",                     -- Image viewers
 --     "org.quickshell",                     -- Quickshell
-    "org.gnome.Solanum",                  -- Pomodoro
-}, "class")
+-- }, "class")
 -- tagged_rule(float_tag, {
 --     "File (Operation|Upload)( Progress)?", -- File manager operation progress (upload, move, copy, etc)
 --     ".* Properties",                       -- File properties
