@@ -1,0 +1,1 @@
+/home/qasha/.config/hypr/monitors.lua
