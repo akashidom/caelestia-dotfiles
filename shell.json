@@ -196,6 +196,19 @@
     "launcher": {
         "actionPrefix": ">",
         "enableDangerousActions": true,
+        "favouriteApps": [
+            "steam",
+            "vesktop",
+            "io.github.tobagin.karere",
+            "com.ayugram.desktop"
+        ],
+        "hiddenApps": [
+            "io.mrarm.mcpelauncher-ui-qt",
+            "org.vinegarhq.Sober",
+            "net.lutris.persona-5-the-phantom-x-64",
+            "com.fightcade.Fightcade",
+            "net.lutris.persona-5-the-phantom-x-66"
+        ],
         "maxWallpapers": 9,
         "showOnHover": false,
         "useFuzzy": {
@@ -252,7 +265,8 @@
                 "gamemd-spawn.exe",
                 "mpv",
                 "mcpelauncher-client",
-                "streaming_client"
+                "streaming_client",
+                "org.vinegarhq.Sober"
             ]
         },
         "quickToggles": [
