@@ -1,3 +1,32 @@
+-- Default config
+local function default_config()
+    return {
+        communication = {
+            discord  = { enable = true, match = { { class = "discord" } }, command = { "discord" }, move = true },
+            whatsapp = { enable = true, match = { { class = "whatsapp" } }, move = true },
+        },
+        music = {
+            spotify = {
+                enable  = true,
+                match   = { { class = "Spotify" }, { initial_title = "Spotify" }, { initial_title = "Spotify Free" } },
+                command = { "spicetify", "watch", "-s" },
+                move    = true,
+            },
+            feishin = { enable = true, match = { { class = "feishin" } }, move = true },
+        },
+        sysmon = {
+            btop = {
+                enable  = true,
+                match   = { { class = "btop", title = "btop", workspace = { name = "special:sysmon" } } },
+                command = { "foot", "-a", "btop", "-T", "btop", "fish", "-C", "exec btop" },
+            },
+        },
+        todo = {
+            todoist = { enable = true, match = { { class = "todoist" } }, command = { "todoist" }, move = true },
+        },
+    }
+end
+--
 -- local function wsaction(action, range, i)
 --     return function()
 --         local activews = hl.get_active_workspace()
@@ -93,34 +122,6 @@
 -- local config_dir = os.getenv("XDG_CONFIG_HOME") or (home .. "/.config")
 -- local json       = require("utils.json") -- rxi's peak library
 --
--- -- Default config
--- local function default_config()
---     return {
---         communication = {
---             discord  = { enable = true, match = { { class = "discord" } }, command = { "discord" }, move = true },
---             whatsapp = { enable = true, match = { { class = "whatsapp" } }, move = true },
---         },
---         music = {
---             spotify = {
---                 enable  = true,
---                 match   = { { class = "Spotify" }, { initial_title = "Spotify" }, { initial_title = "Spotify Free" } },
---                 command = { "spicetify", "watch", "-s" },
---                 move    = true,
---             },
---             feishin = { enable = true, match = { { class = "feishin" } }, move = true },
---         },
---         sysmon = {
---             btop = {
---                 enable  = true,
---                 match   = { { class = "btop", title = "btop", workspace = { name = "special:sysmon" } } },
---                 command = { "foot", "-a", "btop", "-T", "btop", "fish", "-C", "exec btop" },
---             },
---         },
---         todo = {
---             todoist = { enable = true, match = { { class = "todoist" } }, command = { "todoist" }, move = true },
---         },
---     }
--- end
 --
 -- local function merge(default_conf, user_conf)
 --     for category, apps in pairs(user_conf) do
