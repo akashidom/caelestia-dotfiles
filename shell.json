@@ -245,7 +245,7 @@
         "maxVolume": 1.3,
         "pipFollowFocus": true,
         "pipPaused": false,
-        "pipPosition": "top left",
+        "pipPosition": "bottom right",
         "quickShareAutoStart": true,
         "sensorUnits": "Celsius",
         "smartScheme": true,
