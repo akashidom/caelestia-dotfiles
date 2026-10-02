@@ -4,6 +4,8 @@ local function default_config()
         communication = {
             discord  = { enable = true, match = { { class = "discord" } }, command = { "discord" }, move = true },
             whatsapp = { enable = true, match = { { class = "whatsapp" } }, move = true },
+            karere = { enable = true, match = { { class = "io.github.tobagin.karere" } }, command = { "flatpak run io.github.tobagin.karere" }, move = true },
+            ayugram = { enable = true, match = { { class = "" } }, command = { "AyuGram" }, move = true },
         },
         music = {
             spotify = {
