@@ -198,10 +198,10 @@
         "enableDangerousActions": true,
         "favouriteApps": [
             "steam",
-            "vesktop",
             "io.github.tobagin.karere",
             "com.ayugram.desktop",
-            "discord"
+            "discord",
+            "Minecraft Bedrock Launcher"
         ],
         "hiddenApps": [
             "io.mrarm.mcpelauncher-ui-qt",
@@ -267,7 +267,8 @@
                 "mpv",
                 "mcpelauncher-client",
                 "streaming_client",
-                "org.vinegarhq.Sober"
+                "org.vinegarhq.Sober",
+                "PPSSPPSDL"
             ]
         },
         "quickToggles": [
