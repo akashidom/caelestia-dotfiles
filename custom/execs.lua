@@ -27,6 +27,9 @@ hl.on("hyprland.start", function()
 --
 --     -- Start shell
 --     hl.exec_cmd("caelestia shell -d")
+--
+    -- Run apps in ~/.config/autostart.d (delayed launch for caelestia)
+    hl.exec_cmd("~/.config/caelestia/autostart-d.sh")
 end)
 
 -- Resizer listeners

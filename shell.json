@@ -179,7 +179,7 @@
         ],
         "tray": {
             "background": false,
-            "compact": false,
+            "compact": true,
             "recolour": true
         }
     },
@@ -201,14 +201,17 @@
             "io.github.tobagin.karere",
             "com.ayugram.desktop",
             "discord",
-            "Minecraft Bedrock Launcher"
+            "BlazBlue Cross Tag Battle",
+            "Geometry Dash",
+            "org.vinegarhq.Sober"
         ],
         "hiddenApps": [
-            "io.mrarm.mcpelauncher-ui-qt",
-            "org.vinegarhq.Sober",
-            "net.lutris.persona-5-the-phantom-x-64",
-            "com.fightcade.Fightcade",
-            "net.lutris.persona-5-the-phantom-x-66"
+            "linguist",
+            "qdbusviewer",
+            "assistant",
+            "designer",
+            "qv4l2",
+            "qvidcap"
         ],
         "maxWallpapers": 9,
         "showOnHover": false,
@@ -225,14 +228,13 @@
         "arpcAppName": "Caelestia Shell",
         "arpcCaelestiaInfo": true,
         "arpcDetails": "",
-        "arpcEnabled": true,
+        "arpcEnabled": false,
         "arpcLargeImage": "",
         "arpcManualOverride": false,
         "arpcSmallImage": "",
         "arpcState": "",
         "arpcSteamAutoDetect": false,
         "arpcTargetWindows": [
-            "foot"
         ],
         "audioIncrement": 0.05,
         "bluetoothAutoReconnectDevices": [
@@ -242,11 +244,11 @@
         "clockFormat": "TwentyFourHour",
         "dataUnits": "Binary",
         "defaultPlayer": "Spotify",
-        "gpuType": "None",
+        "gpuType": "Auto",
         "maxVolume": 1.3,
         "pipFollowFocus": true,
         "pipPaused": false,
-        "pipPosition": "bottom right",
+        "pipPosition": "bottom left",
         "quickShareAutoStart": true,
         "sensorUnits": "Celsius",
         "smartScheme": true,
@@ -259,17 +261,18 @@
     "utilities": {
         "enabled": true,
         "gameMode": {
+            "autoEnable": true,
             "autoEnableRegexes": [
                 "^steam_app_.*$",
                 ".*osu.*",
                 "gamescope",
-                "gamemd-spawn.exe",
                 "mpv",
                 "mcpelauncher-client",
                 "streaming_client",
                 "org.vinegarhq.Sober",
                 "PPSSPPSDL"
-            ]
+            ],
+            "disableHyprlandBlur": false
         },
         "quickToggles": [
             {

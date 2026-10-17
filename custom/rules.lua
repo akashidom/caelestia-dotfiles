@@ -80,8 +80,8 @@ hl.window_rule({
 -- }, "class")
 --
 --
--- -- Floating apps
--- tagged_rule(float_tag, {
+-- Floating apps
+tagged_rule(float_tag, {
 --     "guifetch",                           -- System info
 --     "yad|zenity",                         -- Dialogs
 --     "wev",                                -- Input detector
@@ -90,7 +90,8 @@ hl.window_rule({
 --     "com.github.GradienceTeam.Gradience", -- GTK themer (deprecated)
 --     "feh|imv|swappy",                     -- Image viewers
 --     "org.quickshell",                     -- Quickshell
--- }, "class")
+     "nz.co.mega.megasync",                  -- MEGAsync
+}, "class")
 -- tagged_rule(float_tag, {
 --     "File (Operation|Upload)( Progress)?", -- File manager operation progress (upload, move, copy, etc)
 --     ".* Properties",                       -- File properties
@@ -185,14 +186,14 @@ tagged_rule(communication_app_tag, {
 -------------------------
 ---- Tag definitions ----
 -------------------------
--- -- These have to come after all uses of window tagging. Thank you Hyprland...
---
+-- These have to come after all uses of window tagging. Thank you Hyprland...
+
 -- create_tag(opaque_tag, { opaque = true })
--- create_tag(float_tag, { float = true })
+create_tag(float_tag, { float = true })
 -- create_tag(float_50_60_tag, { float = true, size = "(monitor_w*0.5) (monitor_h*0.6)", center = true })
 -- create_tag(float_60_70_tag, { float = true, size = "(monitor_w*0.6) (monitor_h*0.7)", center = true })
 -- create_tag(float_70_80_tag, { float = true, size = "(monitor_w*0.7) (monitor_h*0.8)", center = true })
--- create_tag(game_tag, { opaque = true, immediate = true, idle_inhibit = "always" })
+create_tag(game_tag, { opaque = true, immediate = true, idle_inhibit = "always" })
 -- create_tag(xwl_popup_tag, {
 --     no_dim = true,
 --     no_shadow = true,
